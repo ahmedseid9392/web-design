@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> flex box</title>
+  <style>
+  body{
+    display: flex;
+  
+    background-image: url(A.jpg);
+  }
+  .box{
+    width:80px;
+    height: 30px;
+    background-color: darkred;
+    box-sizing: 35px;
+    border: 3px solid blue;
+    margin: 10px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    
+    
+    
+  }
+  .continer{
+    display: flex;
+    flex-direction:  column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    padding-left: 100px;
+    padding-top: 40px;
+  }
+  #box1{
+    border-style: circle;
+    text-align: center;
+    background-color: rebeccapurple;
+    stroke-width: 6px;
+    fill: transparent;
+    stroke: #009ffd;
+    stroke-dasharray: 85 400;
+    stroke-dashoffset: -200;
+    transition: 1s all easiy;
+  }
+    #box2{
+      background-color: green;
+    }
+    #box3{
+      background-color: dodgerblue;
+    }
+    #box4{
+      background-color: yellowgreen;
+    }
+    #box5{
+      background-color: hotpink;
+    }
+   .continer :hover{
+      background-color: red;
+      color: red;
+      font-size: 1.1em;
+    }
+   .continer :active{
+      background-color: red;
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <header> </header>
+  <div class="continer">
+    <div class="box"id="box1">👍</div>
+    <div class="box"id="box2">🖐
+      
+    </div>
+    <div class="box"id="box3">🤳
+      
+    </div>
+    <div class="box"id="box4" alt="copy">Ⓒ</div>
+    <div class="box"id="box6">Ⓓ</div>
+    <div class="box" id="box5">👎</div>
+    
+  </div>
+
+</body>
+
+</html>
