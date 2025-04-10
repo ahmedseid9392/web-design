@@ -1,0 +1,635 @@
+
+#header{
+    width: 100%;
+    height: 100px;
+    border: none;
+    display: block;
+    justify-content: center;
+    text-decoration: none;
+    background-color: rgb(12, 59, 131);
+    color: white;
+    position: fixed;
+    z-index: 1;
+
+    
+}
+
+
+#logo{
+    height: 40px;
+    width: 50px;
+    padding-left: 100px;
+    animation: rotat;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotat{
+        100%{transform: rotatey(180deg)}
+}
+#menu{
+    margin-left: 60%;
+    margin-bottom: 40px;
+
+}
+
+#b1{
+    color: #ff3333;
+    background-color: #2a4d41;
+    margin-left: 150px;
+    padding: 8px;
+    border: none;
+    width: 80px;
+}
+#h44{
+    width: 60px;
+    color: white;
+    font-size: 24px;
+}
+
+#menu #btn1:hover #content{
+    display: flex;
+}
+
+ li {
+   list-style-type: none;
+    
+}
+li a{
+    text-decoration: none;
+    color: rgb(236, 236, 241);
+    display: block;
+    padding-top: 10px;
+    width: 100px;
+    height: 30px;
+    
+}
+li a:hover{
+    background-color: rgba(138, 146, 139, 0.589);
+    text-decoration: none;
+    
+}
+#content{
+    
+    width: 138px;
+    height: 280px;
+    display: none;
+    justify-content: space-around;
+    justify-items: center;
+    background-color: 	#2a4d41;
+    margin-left: 50%; 
+    
+}
+#btn2{
+    border: none; 
+    font-size: 12px;  
+}
+@media (max-width:600px){
+    #header{
+        width: 60%;
+        
+    }
+    #b1{
+        width:0px ;
+       background-color: #004080;
+        height: 0px;
+        margin-left: 20px;
+        
+    }
+   
+    #h1{
+        font-size: 20px;
+       
+    }
+  
+}
+#Home{
+    width:100% ;
+    height: 560px;
+    border: none;
+    margin-top: 95px;
+    display: flex;
+    color:whitesmoke ;
+    background-image: linear-gradient(#2b2d30,#004080,#081725);
+    padding: 30px;
+    font-style: italic;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+   
+}
+span{
+    font-size: 1.8em;
+    color: #ff3333;
+    text-shadow:3px 3px 3px #8000ff;
+    animation: span;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+}
+@keyframes span{
+    100%{
+        top:-20px
+    }
+
+}
+@media  (max-width:600px) {
+    #Home {
+   width: 60%;
+   height:700px ;
+   font-size: 12px;
+   
+}
+h1, h2{
+    font-size: 14px;
+}
+
+}
+
+
+#img1{
+    margin-top: -200px;
+    width: 250px;
+    height: 250px;
+    float: right;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px rgb(44, 143, 189),10px  10px 10px;
+    animation: photo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes photo{
+    100%{transform: rotatey(180deg)}
+}
+@media  (max-width:600px) {
+#img1{
+    margin-top: 160px;
+}
+}
+
+
+
+#Aboutme{
+ width: 40%;
+    height: 350px;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #080c13;
+    color: white;
+    position: relative;
+
+
+}
+ #Aboutme:hover{
+    background-color: #99c2ff;
+    color: black;
+    transition: 0.8s;
+    transform-style: unset;
+    } 
+     @property --angle{
+        syntax:"<angle>";
+        initial-value:0deg;
+        inherits:false;
+     }
+#Aboutme::after ,#Aboutme::before{
+content: '';
+width: 102%;
+height: 360px;
+position:absolute;
+background-image:conic-gradient(from var(--angle),red,#33ccff,green,#ff1a75,blue,#8000ff);
+top: 50%;
+left: 50%;
+translate: -50% -50%;
+z-index: -1;
+padding: 3px;
+border-radius: 20px;
+animation: 3s spin linear infinite;
+
+}
+#Aboutme::before{
+    filter: blur(1.7em);
+    opacity: 0.5;
+}
+@keyframes spin{
+    from{--angle:0deg;}
+    to{
+        --angle:360deg;
+    }
+}
+#image{
+    width: 40%;
+       height: 350px;
+       margin: 30px;
+       padding: 20px;
+       border-radius: 20px;
+       background-color: #080c13;
+       color: white;
+       position: relative;
+       margin-left: 60%;
+       margin-top: -365px;
+    }
+    #pht{
+        width:360px;
+        height: 300px;
+    }
+
+    #image:hover{
+       background-color: #99c2ff;
+       color: black;
+       transition: 0.8s;
+       transform-style: unset;
+       } 
+        @property --angle{
+           syntax:"<angle>";
+           initial-value:0deg;
+           inherits:false;
+        }
+   #image::after ,#image::before{
+   content: '';
+   width: 102%;
+   height: 360px;
+   position:absolute;
+   background-image:conic-gradient(from var(--angle),red,#33ccff,green,#ff1a75,blue,#8000ff);
+   top: 50%;
+   left: 50%;
+   translate: -50% -50%;
+   z-index: -1;
+   padding: 3px;
+   border-radius: 20px;
+   animation: 3s spin linear infinite;
+   
+   }
+   #image::before{
+       filter: blur(1.5em);
+       opacity: 0.5;
+   }
+   @keyframes spin{
+       from{--angle:0deg;}
+       to{
+           --angle:360deg;
+       }
+   }
+   @media (max-width:600px){
+    #image{margin-left:50%;
+   }
+}
+#Skill{
+  
+    width: 100%;
+    height: 800px;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #1d2531;
+    color: white;
+    position: relative;
+   
+}
+#Skill:hover{
+    background-color: #99c2ff;
+    color: black;
+    transition: 0.8s;
+    transform-style: unset;
+    } 
+#Skill::after ,#Skill::before{
+    content: '';
+    width: 102%;
+    height: 810px;
+    position:absolute;
+    background-image:conic-gradient(from var(--angle),red,#33ccff,green,#ff1a75,blue,#8000ff);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 20px;
+    animation: 5s rotate linear infinite;
+    
+    }
+    #Skill::before{
+        filter: blur(1.5rem);
+        opacity: 0.5;
+    }
+    @keyframes rotate{
+        from{--angle:0deg;}
+        to{
+            --angle:360deg;
+        }
+    }
+
+
+#html{
+    width: 250px;
+    height: 230px;
+    
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #004080;
+    padding: 10px;
+    box-shadow: 3px 3px 3px green ,-3px -3px  green;
+
+    
+}
+#python{
+    width: 250px;
+    height: 230px;
+   
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #004080;
+    padding: 10px;
+    box-shadow: 3px 3px 3px green ,-3px -3px  green;
+
+   
+
+}
+#cpp{
+    width: 250px;
+    height: 230px;
+   
+    margin:20px;
+    border-radius: 20px;
+    background-color: #004080;
+    padding: 10px;
+    box-shadow: 3px 3px 3px green ,-3px -3px  green;
+
+}
+#versioncontrol{
+    width: 250px;
+    height: 230px;
+   
+    margin: 20px;
+    margin-left: 450px;
+    margin-top: -750px;
+    border-radius: 20px;
+    background-color: #004080;
+    padding: 10px;
+    box-shadow: 3px 3px 3px green ,-3px -3px  green;
+
+    }
+#css{
+    width: 250px;
+    height: 230px;
+    
+    margin: 20px;
+    margin-left: 450px;
+    border-radius: 20px;
+    background-color: #004080;
+    padding: 10px;
+    box-shadow: 3px 3px 3px green ,-3px -3px  green;
+
+   
+    
+}
+#javascript{
+    width: 250px;
+    height: 230px;
+    
+    margin: 20px;
+    margin-left: 450px;
+    border-radius: 20px;
+    background-color: #004080;
+    padding: 10px;
+    box-shadow: 3px 3px 3px green ,-3px -3px  green;
+
+}
+@media  (max-width:600px) {
+    #Skill {
+       width: 60%;
+       height:1600px ;
+       display: block;
+      }
+      #Skill::after ,#Skill::before{
+        height: 1620px;
+      }
+      #Skill #versioncontrol{
+        margin-top: 35px;
+        margin-left: 20px;
+      }
+      #Skill #css{
+        margin-top: 40px;
+        margin-left: 20px;
+      }
+      #Skill #javascript{
+        margin-top: 50px;
+        margin-left: 20px; 
+      }
+    }
+#project{
+    width: 100%;
+    height: 800px;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #1d2531;
+    color: white;
+    position: relative;
+   
+}
+    #project:hover{
+        background-color: rgb(22, 34, 53);
+        color: black;
+        transition: 0.8s;
+        transform-style: unset;
+        } 
+#project::after ,#project::before{
+        content: '';
+        width: 102%;
+        height: 810px;
+        position:absolute;
+        background-image:conic-gradient(from var(--angle),red,#33ccff,green,#ff1a75,blue,#8000ff);
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        z-index: -1;
+        padding: 3px;
+        border-radius: 20px;
+        animation: 5s rotate linear infinite;
+        
+        }
+        
+#project::before{
+            filter: blur(1.5rem);
+            opacity: 0.5;
+        }
+        @keyframes rotate{
+            from{--angle:0deg;}
+            to{
+                --angle:360deg;
+            }
+        }    
+        #html{
+            width: 250px;
+            height: 230px;
+            
+            margin: 20px;
+            border-radius: 20px;
+            background-color: #00001a;
+            color: whitesmoke;
+            padding: 10px;
+            box-shadow: 3px 3px 3px green ,-3px -3px  green;
+        
+            
+        }
+        #html:hover{
+            background-color: #2a4d41;
+        }
+        #python{
+            width: 250px;
+            height: 230px;
+            
+            margin: 20px;
+            border-radius: 20px;
+            background-color: #00001a;
+            color: whitesmoke;
+            padding: 10px;
+            box-shadow: 3px 3px 3px green ,-3px -3px  green;
+        }
+        #python:hover{
+            background-color: #2a4d41;
+        }
+        #cpp{
+            width: 250px;
+            height: 230px;
+           
+            margin:20px;
+            border-radius: 20px;
+            background-color: #00001a;
+            color: whitesmoke;
+            padding: 10px;
+            box-shadow: 3px 3px 3px green ,-3px -3px  green;
+        
+        }
+        #cpp:hover{
+            background-color: #2a4d41;
+        }
+        #versioncontrol{
+            width: 250px;
+            height: 230px;
+            
+            margin: 20px;
+            margin-left: 450px;
+            margin-top: -750px;
+            border-radius: 20px;
+            background-color: #00001a;
+            color: whitesmoke;
+            padding: 10px;
+            box-shadow: 3px 3px 3px green ,-3px -3px  green;
+            opacity: 8px;
+        
+            }
+            #versioncontrol:hover{
+                background-color: #2a4d41;
+            }
+        #css{
+            width: 250px;
+            height: 230px;
+           
+            margin: 20px;
+            margin-left: 450px;
+            border-radius: 20px;
+            background-color: #00001a;
+            color: whitesmoke;
+            padding: 10px;
+            box-shadow: 3px 3px 3px green ,-3px -3px  green;
+        
+           
+            
+        }
+        #css:hover{
+            background-color: #2a4d41;
+        }
+        #javascript{
+            width: 250px;
+            height: 230px;
+            margin: 20px;
+            margin-left: 450px;
+            border-radius: 20px;
+            background-color: #00001a;
+            color: whitesmoke;
+            padding: 10px;
+            box-shadow: 3px 3px 3px green ,-3px -3px  green;
+        
+        }
+        #javascript:hover{
+            background-color: #2a4d41;
+        }
+
+a img{
+    width: 200px;
+    height: 185px;
+} 
+#music{
+    width: 100px;
+} 
+#port{
+    width: 130px;
+    height:130px;
+}  
+
+@media  (max-width:600px) {
+    #project {
+       width: 60%;
+       height:1600px ;
+      }
+      #project::after ,#project::before{
+        height: 1620px;
+      }
+    
+      
+      
+        #project::after ,#project::before{
+         height: 1620px;
+       }
+      #project #versioncontrol{
+         margin-top: 35px;
+         margin-left: 20px;
+       }
+      #project #css{
+         margin-top: 40px;
+         margin-left: 20px;
+       }
+      #project #javascript{
+         margin-top: 50px;
+         margin-left: 20px; 
+       }
+     
+    }  
+
+ #footer{
+    width: 100%;
+    height: 150px;
+    margin: 20px;
+    display: none;
+    justify-content: center;
+    justify-items: center;
+    background:linear-gradient( rgb(12, 59, 131),#000d33,#4d79ff,#00061a)
+    
+ } 
+ #footer img{
+    width: 50px;
+    height: 30px;
+    margin-top: 110px;
+    
+    
+    } 
+    #img-git,#img-fb,#img-tube,#img-google {
+        
+        padding-left: 20px;
+    }
+    #h45{
+        width: 60px;
+        color: white;
+        font-size: 24px;
+    }
+    #b3{
+        color: #ff3333;
+        background-color: #31896b;
+        margin-left: 150px;
+        padding: 8px;
+        border: none;
+        width: 80px;
+    }
+    #b3 #h45:hover #footer {
+        display: flex;
+    }
